@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+#rodape {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+    color: white;
+}
+
+#rodape_contatos img {
+    margin-bottom: 0.75rem;
+    margin-right: 10px;
+}
+
+#rodape_redes {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#rodape_redes .rodape_link {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+#rodape h3 {
+    color: white;
+}
+
+.box .box-link {
+    color: white;
+    text-decoration: none; 
+}
+
+#box_inscreva {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#box_inscreva p {
+    color: white;
+}
+
+#input_grup {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#input_grup input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_grup button {
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+#autor {
+    display: flex;
+    justify-content: center;
+    background-color: #1C1C1C;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.imagem {
+    flex: 1;
+    margin-right: 10px;
+    text-align: center; 
+}
+
+.imagem img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.texto {
+    flex: 1;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .imagem {
+        margin-right: 0; 
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    #logo {
+        display: none;
+    }
+}  
+
+@media screen and (max-width: 768px) {
+    #rodape {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+     #rodape {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+}
